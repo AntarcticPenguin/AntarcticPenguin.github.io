@@ -20,20 +20,19 @@
     var CONFIG = {"hostname":"github.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="union、union all、intersect、minusintersect用法 1234-- 用法select id from Table1 intersect select id from Table2-- 等效于select distinct id from Table1 where id in (select id from Table2)  minus用法 1234-- 用法sele">
+  <meta name="description" content="原码反码补码正数源码：0000 0101正数反码：0000 0101正数补码：0000 0101   负数源码：1000 0101负数反码：1111 1010负数补码：1111 1011 正数补码 + 负数补码：1 0000 0000   浮点数二进制表示任意一个二进制浮点数v可表示为：$v&#x3D;(-1)^S\times2^E\times M$    S为符号位，E为阶码，M为尾数  flo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SQL关键字">
-<meta property="og:url" content="https://github.com/AntarcticPenguin/AntarcticPenguin.github.io/2022/05/24/SQL%E5%85%B3%E9%94%AE%E5%AD%97/index.html">
+<meta property="og:title" content="计算机组成原理基础">
+<meta property="og:url" content="https://github.com/AntarcticPenguin/AntarcticPenguin.github.io/2022/06/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="union、union all、intersect、minusintersect用法 1234-- 用法select id from Table1 intersect select id from Table2-- 等效于select distinct id from Table1 where id in (select id from Table2)  minus用法 1234-- 用法sele">
+<meta property="og:description" content="原码反码补码正数源码：0000 0101正数反码：0000 0101正数补码：0000 0101   负数源码：1000 0101负数反码：1111 1010负数补码：1111 1011 正数补码 + 负数补码：1 0000 0000   浮点数二进制表示任意一个二进制浮点数v可表示为：$v&#x3D;(-1)^S\times2^E\times M$    S为符号位，E为阶码，M为尾数  flo">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-05-24T02:47:38.000Z">
-<meta property="article:modified_time" content="2022-05-24T08:04:14.641Z">
+<meta property="article:published_time" content="2022-06-11T19:28:15.000Z">
+<meta property="article:modified_time" content="2022-06-11T21:02:44.276Z">
 <meta property="article:author" content="AntarcticPenguin">
-<meta property="article:tag" content="sql">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://github.com/AntarcticPenguin/AntarcticPenguin.github.io/2022/05/24/SQL%E5%85%B3%E9%94%AE%E5%AD%97/">
+<link rel="canonical" href="https://github.com/AntarcticPenguin/AntarcticPenguin.github.io/2022/06/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%9F%BA%E7%A1%80/">
 
 
 <script id="page-configurations">
@@ -46,7 +45,7 @@
   };
 </script>
 
-  <title>SQL关键字 | Hexo</title>
+  <title>计算机组成原理基础 | Hexo</title>
   
 
 
@@ -161,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://github.com/AntarcticPenguin/AntarcticPenguin.github.io/2022/05/24/SQL%E5%85%B3%E9%94%AE%E5%AD%97/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/AntarcticPenguin/AntarcticPenguin.github.io/2022/06/12/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E5%9F%BA%E7%A1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -174,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          SQL关键字
+          计算机组成原理基础
         </h1>
 
         <div class="post-meta">
@@ -185,16 +184,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-05-24 10:47:38 / Modified: 16:04:14" itemprop="dateCreated datePublished" datetime="2022-05-24T10:47:38+08:00">2022-05-24</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/sql/" itemprop="url" rel="index"><span itemprop="name">sql</span></a>
-                </span>
+              <time title="Created: 2022-06-12 03:28:15 / Modified: 05:02:44" itemprop="dateCreated datePublished" datetime="2022-06-12T03:28:15+08:00">2022-06-12</time>
             </span>
 
           
@@ -208,11 +198,20 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="union、union-all、intersect、minus"><a href="#union、union-all、intersect、minus" class="headerlink" title="union、union all、intersect、minus"></a>union、union all、intersect、minus</h1><h2 id="intersect"><a href="#intersect" class="headerlink" title="intersect"></a>intersect</h2><p><strong>用法</strong></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 用法</span></span><br><span class="line"><span class="keyword">select</span> id <span class="keyword">from</span> Table1 <span class="keyword">intersect</span> <span class="keyword">select</span> id <span class="keyword">from</span> Table2</span><br><span class="line"><span class="comment">-- 等效于</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> id <span class="keyword">from</span> Table1 <span class="keyword">where</span> id <span class="keyword">in</span> (<span class="keyword">select</span> id <span class="keyword">from</span> Table2)</span><br></pre></td></tr></table></figure>
-
-<h2 id="minus"><a href="#minus" class="headerlink" title="minus"></a>minus</h2><p><strong>用法</strong></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 用法</span></span><br><span class="line"><span class="keyword">select</span> id <span class="keyword">from</span> Table1 minus <span class="keyword">select</span> id <span class="keyword">from</span> Table2</span><br><span class="line"><span class="comment">-- 等效于</span></span><br><span class="line"><span class="keyword">select</span> <span class="keyword">distinct</span> id <span class="keyword">from</span> Table1 <span class="keyword">where</span> id <span class="keyword">not</span> <span class="keyword">in</span> (<span class="keyword">select</span> id <span class="keyword">from</span> Table2)</span><br></pre></td></tr></table></figure>
+        <h2 id="原码反码补码"><a href="#原码反码补码" class="headerlink" title="原码反码补码"></a>原码反码补码</h2><p><strong>正数源码</strong>：0000 0101<br><strong>正数反码</strong>：0000 0101<br><strong>正数补码</strong>：0000 0101  </p>
+<p><strong>负数源码</strong>：1000 0101<br><strong>负数反码</strong>：1111 1010<br><strong>负数补码</strong>：1111 1011</p>
+<p><strong>正数补码 + 负数补码</strong>：1 0000 0000  </p>
+<h2 id="浮点数二进制表示"><a href="#浮点数二进制表示" class="headerlink" title="浮点数二进制表示"></a>浮点数二进制表示</h2><p><strong>任意一个二进制浮点数v可表示为</strong>：$v&#x3D;(-1)^S\times2^E\times M$  </p>
+<blockquote>
+<p>S为符号位，E为阶码，M为尾数</p>
+</blockquote>
+<p><strong>float</strong>：32位，1S，8E，23M<br><strong>double</strong>：64位，1S，11E，52M  </p>
+<blockquote>
+<p>float用E减去127表示实际阶码，如：0000 0001表示阶码-126<br>double用E减去1023表示实际阶码，如：0000 0001表示-1022</p>
+<p>M表示小数位，如：0101……表示尾数1.0101……  </p>
+<p>特殊情况1：(E全为0)<br>此时M的0101……表示尾数0.0101……<br>float此时E表示阶码-126；double的E表示阶码-1022  </p>
+<p>特殊情况2：(E全为1)<br>M只能全为0，表示正负无穷大；不为0位无效数字</p>
+</blockquote>
 
     </div>
 
@@ -221,9 +220,6 @@
     
 
       <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/sql/" rel="tag"># sql</a>
-          </div>
 
         
 
@@ -231,13 +227,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/05/20/DevOps%E6%A6%82%E5%BF%B5/" rel="prev" title="DevOps概念">
-      <i class="fa fa-chevron-left"></i> DevOps概念
+    <a href="/2022/05/24/JavaSE%E5%9F%BA%E7%A1%80/" rel="prev" title="JavaSE基础">
+      <i class="fa fa-chevron-left"></i> JavaSE基础
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/05/24/SQL%E5%87%BD%E6%95%B0/" rel="next" title="SQL函数">
-      SQL函数 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -296,7 +289,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#union%E3%80%81union-all%E3%80%81intersect%E3%80%81minus"><span class="nav-number">1.</span> <span class="nav-text">union、union all、intersect、minus</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#intersect"><span class="nav-number">1.1.</span> <span class="nav-text">intersect</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#minus"><span class="nav-number">1.2.</span> <span class="nav-text">minus</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%9F%E7%A0%81%E5%8F%8D%E7%A0%81%E8%A1%A5%E7%A0%81"><span class="nav-number">1.</span> <span class="nav-text">原码反码补码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA"><span class="nav-number">2.</span> <span class="nav-text">浮点数二进制表示</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -310,7 +303,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -323,7 +316,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -407,6 +400,61 @@
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
