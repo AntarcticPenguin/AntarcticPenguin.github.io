@@ -178,10 +178,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-06-12 03:28:15 / Modified: 05:02:44" itemprop="dateCreated datePublished" datetime="2022-06-12T03:28:15+08:00">2022-06-12</time>
+              <time title="Created: 2022-06-12 03:28:15" itemprop="dateCreated datePublished" datetime="2022-06-12T03:28:15+08:00">2022-06-12</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-06-13 04:08:21" itemprop="dateModified" datetime="2022-06-13T04:08:21+08:00">2022-06-13</time>
+              </span>
 
           
 
@@ -258,7 +264,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-06-13 04:05:47" itemprop="dateModified" datetime="2022-06-13T04:05:47+08:00">2022-06-13</time>
+                <time title="Modified: 2022-06-13 04:08:23" itemprop="dateModified" datetime="2022-06-13T04:08:23+08:00">2022-06-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -351,7 +357,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-06-10 10:40:34" itemprop="dateModified" datetime="2022-06-10T10:40:34+08:00">2022-06-10</time>
+                <time title="Modified: 2022-06-13 04:08:25" itemprop="dateModified" datetime="2022-06-13T04:08:25+08:00">2022-06-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -636,13 +642,13 @@
 <p>to_utc_timestamp(T a, STRING timezone)</p>
 <p>Assumes given timestamp is in given timezone and converts to UTC (as of Hive 0.8.0). For example, to_utc_timestamp(‘1970-01-01 00:00:00’,’PST’) returns 1970-01-01 08:00:00.</p>
 </blockquote>
-<p><strong>扩展知识</strong></p>
+<p>扩展知识</p>
 <blockquote>
 <p>GMT：Greenwich Mean Time 格林尼治标准时间。这是以英国格林尼治天文台观测结果得出的时间，这是英国格林尼治当地时间，这个地方的当地时间过去被当成世界标准的时间。</p>
-<p>UT：Universal Time 世界时。根据原子钟计算出来的时间。 </p>
+<p>UT：Universal Time 世界时。根据原子钟计算出来的时间。</p>
 <p>UTC：Coordinated Universal Time 协调世界时。因为地球自转越来越慢，每年都会比前一年多出零点几秒，每隔几年协调世界时组织都会给世界时+1秒，让基于原子钟的世界时和基于天文学（人类感知）的格林尼治标准时间相差不至于太大。并将得到的时间称为UTC，这是现在使用的世界标准时间。协调世界时不与任何地区位置相关，也不代表此刻某地的时间，所以在说明某地时间时要加上时区也就是说GMT并不等于UTC，而是等于UTC+0，只是格林尼治刚好在0时区上。GMT &#x3D; UTC+0</p>
 </blockquote>
-<p><strong>时区简称(必须大写)</strong></p>
+<p>时区简称(必须大写)</p>
 <p><strong>CST</strong>：西6区，UTC-6</p>
 <p><strong>PRC</strong>：东8区，UTC+8 (prc为中国简称。西6和东8简称都是cst，但函数会认为是西6)</p>
 <h2 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h2><h3 id="collect-set"><a href="#collect-set" class="headerlink" title="collect_set()"></a>collect_set()</h3><blockquote>
@@ -651,7 +657,7 @@
 <h3 id="collect-list"><a href="#collect-list" class="headerlink" title="collect_list()"></a>collect_list()</h3><blockquote>
 <p>Returns a list of objects with duplicates. (As of Hive 0.13.0.)</p>
 </blockquote>
-<p><strong>collect_set()、collect_list()函数实例</strong></p>
+<p>collect_set()、collect_list()函数实例</p>
 <table>
 <thead>
 <tr>
